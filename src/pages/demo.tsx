@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { useAppDispatch, useAppSelector } from '@src/hook'
 import { addCount, addCountAsync } from "@store/demo-slice"
 
-const IndexPages: FC = () => {
+const DemosPage: FC = () => {
     const count = useAppSelector((state) => { return state.Demo.count })
     const dispatch = useAppDispatch()
     return (
@@ -19,4 +19,4 @@ const IndexPages: FC = () => {
     )
 }
 
-export default IndexPages
+export default DemosPage
